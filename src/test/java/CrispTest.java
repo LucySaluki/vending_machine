@@ -10,7 +10,7 @@ public class CrispTest {
 
     @Before
     public void before(){
-        crisp = new Crisp("Salt & Vinegar", "Walkers", 1.00);
+        crisp = new Crisp("Salt & Vinegar", "Walkers", 0.50);
     }
 
     @Test
@@ -25,6 +25,6 @@ public class CrispTest {
 
     @Test
     public void canGetPrice(){
-        assertEquals(1.00, crisp.getPrice(),0.01);
+        assertEquals(0.50, crisp.getPrice(),0.01);
     }
 }
